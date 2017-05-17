@@ -242,17 +242,17 @@ public class TestOneCDI implements Serializable{
         
         list.stream().forEach(r -> {
 
+            Polyline polyline = new Polyline() ;
+            
+            Coordinate start = r.getStart().getLocation().getCoordinate() ;
+            
+            polyline.getPaths().add(new LatLng(start.getX(), start.getY())) ;
+            
             r.getActivities().forEach(tour -> {
             
                 System.out.println("com.kareem.vrptests.TestOneCDI.solve()"+tour);
                 
-                Polyline polyline = new Polyline() ;
-                
                 Coordinate coordinate = tour.getLocation().getCoordinate() ;
-                
-                Coordinate start = r.getStart().getLocation().getCoordinate() ;
-                
-                polyline.getPaths().add(new LatLng(start.getX(), start.getY())) ;
                 
                 polyline.getPaths().add(new LatLng(coordinate.getX(), coordinate.getY())) ;
                 
