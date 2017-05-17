@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Test</title>
+        <script src="http://maps.google.com/maps/api/js?key=AIzaSyDe_nAWE5ccLGXPuWbcGTXzVlrtH-lMcUw" type="text/javascript" ></script>
+
+    </h:head>
+    <h:body>
+        <h:form prependId="false">
+            <p:gmap  id="gmap"  center="30.606222, 32.271126"
+                     zoom="15" type="TERRAIN" 
+                     model="#{testOneCDI.mapModel}"
+                     style="width:100%;height:400px" 
+                     onPointClick="handleClick(event)"
+                     />
+
+            <p:dialog widgetVar="dlg" showEffect="fade" header="Supply Info">
+                <h:panelGrid columns="3" id="grid" cellpadding="20" cellspacing="10">
+                    <p:outputLabel value="Type" for="type" />
+                    <p:selectOneMenu id="type" value="#{testOneCDI.currentType}" required="true">
+                        <f:selectItem itemLabel="Select" itemValue="#{null}" noSelectionOption="true" />
+                        <f:selectItems itemLabel="#{t}" itemValue="#{t}" var="t" value="#{testOneCDI.types}" />
+                        <p:ajax update="grid" />
+                    </p:selectOneMenu>
+                    <p:message for="type" />
+
+                    <p:outputLabel value="Id" for="idd" />
+                    <p:inputText id="idd" value="#{testOneCDI.currentId}" required="true" />
+                    <p:message for="idd" />
+                    
+                    <p:outputLabel value="#{testOneCDI.currentType == 'CUSTOMER' ? 'Demand' : 'Capacity'}" id="dLabel" />
+                    <p:inputText id="demand" value="#{testOneCDI.demand}" required="true">
+                        <p:keyFilter for="demand" mask="num" />
+                    </p:inputText>
+                    <p:message for="demand" />
+
+                    <p:outputLabel value="Color" for="color" rendered="#{testOneCDI.currentType != 'CUSTOMER'}" />
+                    <p:selectOneMenu id="color" value="#{testOneCDI.color}" required="true" rendered="#{testOneCDI.currentType != 'CUSTOMER'}">
+                        <f:selectItem itemLabel="Select" itemValue="#{null}" noSelectionOption="true" />
+                        <f:selectItems  value="#{testOneCDI.colors}" />
+ 
+                    </p:selectOneMenu>
+                    <p:message for="color" rendered="#{testOneCDI.currentType != 'CUSTOMER'}" />
+                    
+                    <f:facet name="footer">
+                        <p:commandButton value="Add" action="#{testOneCDI.addMarker}" process="@form" update="@form"
+                                         oncomplete="if(! args.validationFailed) PF('dlg').hide()"/>
+                        <p:commandButton value="Cancel" oncomplete="PF('dlg').hide()" />
+                    </f:facet>
+                </h:panelGrid>
+
+            </p:dialog>
+
+            <h:inputHidden id="lat" value="#{testOneCDI.lat}" />
+            <h:inputHidden id="lng" value="#{testOneCDI.lng}" />
+            
+            <p:commandButton value="solve" action="#{testOneCDI.solve}" process="@this" update="gmap" />
+        </h:form>
+        <script>
+            function handleClick(event) {
+                document.getElementById('lat').value = event.latLng.lat();
+                document.getElementById('lng').value = event.latLng.lng();
+
+                PF('dlg').show();
+            }
+        </script>
+    </h:body>
+</html>
+
