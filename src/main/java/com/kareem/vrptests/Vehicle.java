@@ -5,46 +5,54 @@
  */
 package com.kareem.vrptests;
 
-import org.primefaces.model.map.Marker;
-
 /**
  *
  * @author km
  */
 
 public class Vehicle {
-   
-    private Marker marker ;
-    
-    private String id ;
-    
-    private int capacity ;
+  
+   private String id ;
+  
+   private Integer capacity ;
+  
+   private Location location ;
 
-    private String color ;
-    
-    public Vehicle(Marker marker, String id, int capacity,String color) {
-        this.marker = marker;
+   public Vehicle() {
+   }
+
+    public Vehicle(String id, Integer capacity, Location location) {
         this.id = id;
         this.capacity = capacity;
-        this.color = color ;
+        this.location = location;
     }
 
-    public String getColor() {
-        return color;
-    }
-
-    
-    public int getCapacity() {
-        return capacity;
-    }
-
+   
     public String getId() {
         return id;
     }
 
-    public Marker getMarker() {
-        return marker;
+    public void setCapacity(Integer capacity) {
+        this.capacity = capacity;
     }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
     
-    
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+  
+  
+   
 }

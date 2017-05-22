@@ -5,40 +5,51 @@
  */
 package com.kareem.vrptests;
 
-import org.primefaces.model.map.Marker;
-
 /**
  *
  * @author km
  */
 
 public class Customer {
+  
+   private String id ;
    
-    private Marker marker ;
-    
-    private int demand ;
+   private Location location ;
+   
+   private Integer demand ;
 
-    private String id ;
+    public Customer() {
+    }
 
-    public Customer(Marker marker, int demand, String id) {
-        this.marker = marker;
-        this.demand = demand;
+    public Customer(String id, Location location, Integer demand) {
         this.id = id;
-    }
-   
-    
-    public int getDemand() {
-        return demand;
+        this.location = location;
+        this.demand = demand;
     }
 
-    public Marker getMarker() {
-        return marker;
+    public Integer getDemand() {
+        return demand;
     }
 
     public String getId() {
         return id;
     }
 
-    
-    
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setDemand(Integer demand) {
+        this.demand = demand;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+   
+   
 }

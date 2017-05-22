@@ -23,7 +23,6 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -52,9 +51,9 @@ public class TestOneCDI implements Serializable{
     
     private MapModel mapModel ;
     
-    private List<Customer> customers = new ArrayList<>();
+    private List<Customer2> customers = new ArrayList<>();
     
-    private List<Vehicle> vehicles = new ArrayList<>() ;
+    private List<Vehicle2> vehicles = new ArrayList<>() ;
     
     private double lat,lng ;
     
@@ -95,7 +94,7 @@ public class TestOneCDI implements Serializable{
        {
           marker = createCustomer(new LatLng(lat, lng), currentId) ;
        
-          Customer customer = new Customer(marker, demand, currentId) ;
+          Customer2 customer = new Customer2(marker, demand, currentId) ;
           
           customers.add(customer) ;
        }
@@ -103,7 +102,7 @@ public class TestOneCDI implements Serializable{
        {
           marker = createVehicle(new LatLng(lat, lng), currentId) ;
        
-          Vehicle v = new Vehicle(marker, currentId,demand,color);
+          Vehicle2 v = new Vehicle2(marker, currentId,demand,color);
           
           vehicles.add(v) ;           
        }
@@ -193,10 +192,8 @@ public class TestOneCDI implements Serializable{
     public void solve()
     { 
         final int WEIGHT_INDEX = 0;
-       
-        //System.out.println("com.kareem.vresadfdsfsdfsdfsdfsdfdsfptests.TestOneCDI.solve()") ;
-        
-        Map<Integer,List<Vehicle>> capByType = vehicles.stream().collect(Collectors.groupingBy(Vehicle::getCapacity));
+      
+        Map<Integer,List<Vehicle2>> capByType = vehicles.stream().collect(Collectors.groupingBy(Vehicle2::getCapacity));
       
         VehicleRoutingProblem.Builder vrpBuilder = VehicleRoutingProblem.Builder.newInstance();
         
