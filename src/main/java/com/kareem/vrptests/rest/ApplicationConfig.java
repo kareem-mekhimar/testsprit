@@ -30,7 +30,8 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(com.kareem.vrptests.rest.CorsFilter.class);
-        resources.add(com.kareem.vrptests.rest.VrpResource.class);
+        resources.add(com.kareem.vrptests.rest.CustomResolver.class);
+        resources.add(com.kareem.vrptests.rest.VrpResource.class) ;
     }
     
 }

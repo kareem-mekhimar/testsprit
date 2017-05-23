@@ -13,6 +13,14 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+<!--    <pluginRepositories>
+        <pluginRepository>
+            <id>miredot</id>
+            <name>Miredot Releases</name>
+            <url>http://nexus.qmino.com/content/repositories/miredot</url>
+        </pluginRepository>
+    </pluginRepositories>-->
+    
     
     <dependencies>
         <dependency>
@@ -47,8 +55,42 @@
             <artifactId>primefaces</artifactId>
             <version>6.0</version>
         </dependency>
+        <dependency>
+            <groupId>org.jboss.resteasy</groupId>
+            <artifactId>resteasy-jackson2-provider</artifactId>
+            <version>3.0.8.Final</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
+<!--    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.qmino</groupId>
+                <artifactId>miredot-plugin</artifactId>
+                <version>2.0.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>restdoc</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <organizationId>a6a1233b-b3a3-416f-a291-665f7abd611a</organizationId>
+                    <restModel>
+                        <restFramework>
+                            <name>jax-rs</name>
+                        </restFramework>
+                    </restModel>
+                    <output>
+                        <html></html>
+                    </output>
+                     insert other configuration here (optional) 
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
     <profiles>
         <profile>
             <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
@@ -69,6 +111,8 @@
                             <warName>ROOT</warName>
                         </configuration>
                     </plugin>
+                    
+                    
                 </plugins>
             </build>
         </profile>

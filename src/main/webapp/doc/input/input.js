@@ -1,0 +1,859 @@
+var com = {
+	"qmino":{
+		"miredot":{
+		},
+	},
+};
+com.qmino.miredot.restApiSource = {
+	"projectName":"TestSprit",
+	"projectVersion":"1.0",
+	"projectTitle":"TestSprit-1.0",
+	"buildSystem":"maven 3",
+	"miredotVersion":"2.0.3",
+	"miredotRevision":"22d2e7a3171a+",
+	"jsonDocEnabled":true,
+	"jsonDocHidden":false,
+	"singlePage":false,
+	"hideLogoOnTop":false,
+	"dateOfGeneration":"2017-05-23 04:48:21",
+	"validLicense":true,
+	"licenseErrorMessage":[
+		"Build is approved",
+
+	],
+	"onlineLicense":true,
+	"loginUrl":null,
+	"licenseType":"PRO",
+	"allowUsageTracking":false,
+	"baseUrl":"http://www.example.com",
+	"applicationPath":"/resources",
+	"issuesTabHidden":false,
+};
+
+com.qmino.miredot.restApiSource.tos = {
+	"com_kareem_vrptests_UnAssignedCustomer_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_UnAssignedCustomer_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_UnAssignedCustomer_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_UnAssignedCustomer_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Vehicle_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Vehicle_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Vehicle_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Vehicle_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Route_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Route_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Route_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Route_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Customer_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Customer_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Customer_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Customer_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_rest_Problem_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_rest_Problem_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_rest_Problem_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_rest_Problem_out",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_PathSegment_in":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_PathSegment_in",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_PathSegment_out":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_PathSegment_out",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_UriBuilder_in":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_UriBuilder_in",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_UriBuilder_out":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_UriBuilder_out",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_UriInfo_in":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_UriInfo_in",
+		"content":[
+		],
+	},
+	"javax_ws_rs_core_UriInfo_out":{
+		"type":"complex",
+		"name":"javax_ws_rs_core_UriInfo_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Solution_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Solution_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Solution_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Solution_out",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Location_in":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Location_in",
+		"content":[
+		],
+	},
+	"com_kareem_vrptests_Location_out":{
+		"type":"complex",
+		"name":"com_kareem_vrptests_Location_out",
+		"content":[
+		],
+	},
+};
+com.qmino.miredot.restApiSource.enums = {
+};
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_in"].content = [
+	{
+		"name":"reason",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"customerId",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_out"].content = [
+	{
+		"name":"reason",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"customerId",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_in"].content = [
+	{
+		"name":"location",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"capacity",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"id",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_out"].content = [
+	{
+		"name":"location",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"id",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"capacity",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_in"].content = [
+	{
+		"name":"start",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"activityLocations",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"vehicleId",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_out"].content = [
+	{
+		"name":"start",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"activityLocations",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"vehicleId",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_in"].content = [
+	{
+		"name":"location",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"id",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"demand",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_out"].content = [
+	{
+		"name":"location",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"id",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"demand",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_in"].content = [
+	{
+		"name":"customers",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_in"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"vehicles",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_in"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_out"].content = [
+	{
+		"name":"customers",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Customer_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"vehicles",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Vehicle_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_in"].content = [
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_out"].content = [
+	{
+		"name":"path",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"matrixParameters",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"map",
+			"typeKey":{
+				"type":"simple",
+				"typeValue":"string",
+			},
+			"typeValue":{
+				"type":"collection",
+				"typeValue":{
+					"type":"simple",
+					"typeValue":"string",
+				},
+			},
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_in"].content = [
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"].content = [
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_in"].content = [
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_out"].content = [
+	{
+		"name":"absolutePath",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"java.net.URI",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"path",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"string",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"absolutePathBuilder",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"baseUriBuilder",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"],
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"pathParameters",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"map",
+			"typeKey":{
+				"type":"simple",
+				"typeValue":"string",
+			},
+			"typeValue":{
+				"type":"collection",
+				"typeValue":{
+					"type":"simple",
+					"typeValue":"string",
+				},
+			},
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"queryParameters",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"map",
+			"typeKey":{
+				"type":"simple",
+				"typeValue":"string",
+			},
+			"typeValue":{
+				"type":"collection",
+				"typeValue":{
+					"type":"simple",
+					"typeValue":"string",
+				},
+			},
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"matchedResources",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":{
+				"type":"simple",
+				"typeValue":"object",
+			},
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"pathSegments",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_PathSegment_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"requestUri",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"java.net.URI",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"baseUri",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"java.net.URI",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"matchedURIs",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":{
+				"type":"simple",
+				"typeValue":"string",
+			},
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"requestUriBuilder",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriBuilder_out"],
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["javax_ws_rs_core_UriInfo_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_in"].content = [
+	{
+		"name":"unAssignedCustomers",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_in"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"routes",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_in"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_out"].content = [
+	{
+		"name":"unAssignedCustomers",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_UnAssignedCustomer_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"routes",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"collection",
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Route_out"],
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_out"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"].content = [
+	{
+		"name":"lat",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"lng",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_in"].comment = null;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"].content = [
+	{
+		"name":"lat",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+	{
+		"name":"lng",
+		"comment":null,
+		"fullComment":null,
+		"typeValue":{
+			"type":"simple",
+			"typeValue":"number",
+		},
+		"deprecated":false,
+		"required":false,
+	},
+];
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"].ordered = false;
+com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Location_out"].comment = null;
+com.qmino.miredot.restApiSource.interfaces = [
+	{
+		"beschrijving":"PUT method for updating or creating an instance of VrpResource",
+		"url":"/vrp/",
+		"http":"PUT",
+		"title":"PUT method for updating or creating an instance of VrpResource",
+		"tags":[
+			
+		],
+		"authors":[
+			"km",
+
+		],
+		"compressed":false,
+		"deprecated":false,
+		"consumes":[
+			"application/json",
+		],
+		"produces":[
+			"application/json",
+		],
+		"roles":[
+		],
+		"rolesAllowed":null,
+		"permitAll":false,
+		"output":{
+			"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_Solution_out"],
+			"comment":null,
+		},
+		"statusCodes":[
+		],
+		"hash":"-2030309220",
+		"responseHeaders":{
+			"headers":[
+			],
+			"customHeaders":[
+			],
+		},
+		"inputs":{
+			"PATH":[
+			],
+			"QUERY":[
+			],
+			"BODY":[
+				{
+					"typeValue":com.qmino.miredot.restApiSource.tos["com_kareem_vrptests_rest_Problem_in"],
+					"comment":null,
+					"jaxrs":"BODY",
+				},
+			],
+			"HEADER":[
+			],
+			"COOKIE":[
+			],
+			"FORM":[
+			],
+			"MATRIX":[
+			],
+		},
+	},
+];
+com.qmino.miredot.projectWarnings = [
+	{
+		"category":"JAVADOC_MISSING_PARAMETER_DOCUMENTATION",
+		"description":"Missing parameter documentation",
+		"failedBuild":"false",
+		"interface":"-2030309220",
+		"implementationClass":"com.kareem.vrptests.rest.VrpResource",
+		"implementationMethod":"solve",
+		"entity":null,
+	},
+	{
+		"category":"JAVADOC_MISSING_PARAMETER_DOCUMENTATION",
+		"description":"Missing return type documentation",
+		"failedBuild":"false",
+		"interface":"-2030309220",
+		"implementationClass":"com.kareem.vrptests.rest.VrpResource",
+		"implementationMethod":"solve",
+		"entity":null,
+	},
+];
+com.qmino.miredot.processErrors = [
+];
+var customHttpMethods = [
+];
+
